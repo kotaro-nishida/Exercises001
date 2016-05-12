@@ -55,7 +55,11 @@ public class Application extends Controller {
     			if( msg.id == datas.get(i).id){
     				Form<Message> update = new Form(Message.class).bindFromRequest();
     				Message message = update.get();
-    				return ok(edit.render(datas.get(i).name,update));
+    				message.id = datas.get(i).id;
+    				message.name = datas.get(i).name;
+    				message.mail = datas.get(i).mail;
+    				message.message = datas.get(i).message;
+    				return ok(edit.render("編集します。",update));
     			}
     		}
     	}else{
@@ -63,6 +67,7 @@ public class Application extends Controller {
     	}
     	datas = Message.find.all();
     	return ok(index.render("ホーム画面",datas));
+
     }
 
     public static Result editcreate(){

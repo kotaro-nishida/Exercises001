@@ -7,8 +7,20 @@
 		revision="1.0-SNAPSHOT"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20160510132007"/>
+		date="20160512160000"/>
 	<dependencies>
+		<module organisation="postgresql" name="postgresql">
+			<revision name="9.1-901.jdbc4" status="release" pubdate="20111124045802" resolver="public" artresolver="public" homepage="http://jdbc.postgresql.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="65">
+				<license name="BSD License" url="http://jdbc.postgresql.org/license.html"/>
+				<metadata-artifact status="successful" details="" size="1062" time="473" location="/Applications/play-2.2.6/framework/../repository/cache/postgresql/postgresql/ivy-9.1-901.jdbc4.xml" searched="true" original-local-location="/Applications/play-2.2.6/framework/../repository/cache/postgresql/postgresql/ivy-9.1-901.jdbc4.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901.jdbc4/postgresql-9.1-901.jdbc4.pom"/>
+				<caller organisation="databaseapp" name="databaseapp_2.10" conf="compile, runtime-internal, runtime, optional" rev="9.1-901.jdbc4" rev-constraint-default="9.1-901.jdbc4" rev-constraint-dynamic="9.1-901.jdbc4" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="postgresql" type="jar" ext="jar" status="successful" details="" size="539705" time="2022" location="/Applications/play-2.2.6/framework/../repository/cache/postgresql/postgresql/jars/postgresql-9.1-901.jdbc4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901.jdbc4/postgresql-9.1-901.jdbc4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="com.typesafe.play" name="play-cache_2.10">
 			<revision name="2.2.6" status="release" pubdate="20141113143718" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="63">
 				<metadata-artifact status="no" details="" size="2126" time="0" location="/Applications/play-2.2.6/framework/../repository/cache/com.typesafe.play/play-cache_2.10/ivy-2.2.6.xml" searched="false" origin-is-local="true" origin-location="/Applications/play-2.2.6/repository/local/com.typesafe.play/play-cache_2.10/2.2.6/ivys/ivy.xml"/>
