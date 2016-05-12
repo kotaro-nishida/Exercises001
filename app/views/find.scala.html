@@ -1,0 +1,11 @@
+@(msg: String, inputData:Form[Message])
+
+@main("Sample Page") {
+
+	<h1>Hello</h1>
+	@helper.form(action = routes.Application.findcreate) {
+	@(helper.inputText(inputData("name")))
+	<input type = "submit">
+	}
+
+}

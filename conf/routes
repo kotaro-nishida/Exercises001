@@ -1,0 +1,27 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+#ホーム画面（DBデータ全件表示）
+GET     /                           controllers.Application.index()
+#新規メッセージ作成画面
+GET     /add                        controllers.Application.add()
+GET     /addcreate                        controllers.Application.addcreate()
+#投稿メッセージID検索画面
+GET     /item                       controllers.Application.setItem()
+#投稿メッセージ編集画面
+POST    /edit                       controllers.Application.edit()
+POST    /editcreate                 controllers.Application.editcreate()
+#削除データ指定画面
+GET     /delete                     controllers.Application.delete()
+POST     /deletecreate                     controllers.Application.deletecreate()
+#投稿者検索画面（名前で検索）
+GET     /find                       controllers.Application.find()
+POST     /findcreate                       controllers.Application.findcreate()
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
+
+

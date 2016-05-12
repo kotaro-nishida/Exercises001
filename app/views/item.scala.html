@@ -1,0 +1,12 @@
+@(msg: String, inputData:Form[Message])
+
+@main("Sample Page") {
+
+	<h1>@msg</h1>
+	@helper.form(action = routes.Application.edit) {
+	<input type="hidden" value = @inputData.name name="name">
+	@(helper.inputText(inputData("id")))
+	<input type = "submit">
+	}
+
+}

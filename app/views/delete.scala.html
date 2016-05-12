@@ -1,0 +1,10 @@
+@(msg: String, inputData:Form[Message])
+@main("Sample Page") {
+
+	<h1>Hello</h1>
+	@helper.form(action = routes.Application.deletecreate) {
+	<input type="hidden" value = @inputData.name name="name">
+	@(helper.inputText(inputData("id")))
+	<input type = "submit">
+	}
+}

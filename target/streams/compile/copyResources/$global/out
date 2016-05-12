@@ -1,0 +1,7 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/Users/koutaroh.nishida/DatabaseApp/conf/application.conf,/Users/koutaroh.nishida/DatabaseApp/target/scala-2.10/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/koutaroh.nishida/DatabaseApp/conf/evolutions,/Users/koutaroh.nishida/DatabaseApp/target/scala-2.10/classes/evolutions)[0m
+[0m[[0mdebug[0m] [0m	(/Users/koutaroh.nishida/DatabaseApp/conf/messages,/Users/koutaroh.nishida/DatabaseApp/target/scala-2.10/classes/messages)[0m
+[0m[[0mdebug[0m] [0m	(/Users/koutaroh.nishida/DatabaseApp/conf/routes,/Users/koutaroh.nishida/DatabaseApp/target/scala-2.10/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/Users/koutaroh.nishida/DatabaseApp/conf/evolutions/default,/Users/koutaroh.nishida/DatabaseApp/target/scala-2.10/classes/evolutions/default)[0m
+[0m[[0mdebug[0m] [0m	(/Users/koutaroh.nishida/DatabaseApp/conf/evolutions/default/1.sql,/Users/koutaroh.nishida/DatabaseApp/target/scala-2.10/classes/evolutions/default/1.sql)[0m

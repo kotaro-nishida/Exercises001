@@ -1,0 +1,12 @@
+@(msg: String,inputData:Form[Message])
+
+@main("Sample Page") {
+
+  <h1>@msg</h1>
+	@helper.form(action = routes.Application.addcreate) {
+		@(helper.inputText(inputData("name")))
+		@(helper.inputText(inputData("mail")))
+		@(helper.textarea(inputData("message"),'cols->50))
+		<input type = "submit">
+	}
+}
