@@ -3,7 +3,6 @@
 @main("Sample Page") {
   <h1>@msg</h1>
 	@helper.form(action = routes.Application.editcreate) {
-		@(helper.inputText(inputData("id")))
 		@(helper.inputText(inputData("name")))
 		@(helper.inputText(inputData("mail")))
 		@(helper.textarea(inputData("message"),'cols->50))
